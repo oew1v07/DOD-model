@@ -1,0 +1,11 @@
+/*  ::
+
+    :: Theme            : Talisman
+    :: Theme URI        : http://labs.funcoders.com/html/Talisman
+
+    :: File             : css/colors/pink.min.css
+    :: Name             : Color style - PINK
+    :: Version          : 1.0
+
+:: */
+h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover,h6 a:hover{color:#FF6F6F;text-decoration:none}a,body .bg-color-reset a{color:#FF6F6F}.btn{background-color:#FF6F6F;border:1px solid #FF6F6F}.dropcap{color:#FF6F6F}blockquote{border-left:3px solid #FF6F6F}blockquote .author{color:#FF6F6F}.text-right blockquote{border-right:3px solid #FF6F6F}ul.asterisk>li:before,ul.bolt>li:before,ul.circle>li:before,ul.dash>li:before,ul.rocket>li:before{color:#FF6F6F}.table.table-colored thead th{background-color:#FF6F6F}.fc-pagi a.selected,.fc-pagi a:focus,.fc-pagi a:hover,.fc-spinner>.fc-spinner-back,.tp-bullets .bullet.selected,.tp-bullets .bullet:focus,.tp-bullets .bullet:hover{background:#FF6F6F}#header #mobile-menu a:not(.logo).active,#header #mobile-menu a:not(.logo):hover,#header .navbar ul li.active>a,#header .navbar ul li>a:hover{color:#FF6F6F}#header .navbar .navbar-bar{background-color:#FF6F6F}.fc-article-nav ul li .fc-nav:hover{color:#FF6F6F}.fc-article-type,.fc-tags>a:hover{background:#FF6F6F}.fc-article-details li a{color:#FF6F6F}.fc-pagination a:hover{background:#FF6F6F}.progress{border:3px solid #FF6F6F}.progress .bar{background-color:#FF6F6F}.progress .bar.stripes{background:#FF6F6F\9}.bg-color-invert .fc-iconbox.fc-style-2 .fc-iconbox-content:after,.bg-color-invert .fc-iconbox.fc-style-2 .fc-iconbox-content:before,.bg-color-invert .fc-iconbox.fc-style-2 .fc-iconbox-heading:after,.bg-color-invert .fc-iconbox.fc-style-2 .fc-iconbox-heading:before,.fc-iconbox.fc-style-2:hover .fc-iconbox-content:after,.fc-iconbox.fc-style-2:hover .fc-iconbox-content:before,.fc-iconbox.fc-style-2:hover .fc-iconbox-heading:after,.fc-iconbox.fc-style-2:hover .fc-iconbox-heading:before,.mejs-controls .mejs-time-rail .mejs-time-current{background:#FF6F6F}.fc-iconbox.fc-style-3 .fc-iconbox-heading .icon,.fc-iconbox.fc-style-4.fc-hover .fc-iconbox-content,.fc-iconbox.fc-style-4:hover .fc-iconbox-heading:after,.fc-iconbox.fc-style-4:hover .fc-iconbox-heading:before{background-color:#FF6F6F}.fc-accordion,.fc-tab .fc-tab-heading{background:#FF6F6F}

@@ -1,0 +1,197 @@
+/*  ::
+
+    :: Theme            : Talisman
+    :: Theme URI        : http://labs.funcoders.com/html/Talisman
+
+    :: File             : css/colors/pink.css
+    :: Name             : Color style - PINK
+    :: Version          : 1.0
+
+:: */
+
+h1 a:hover, h2 a:hover, h3 a:hover,
+h4 a:hover, h5 a:hover, h6 a:hover {
+    color: #FF6F6F;
+    text-decoration: none;
+}
+a {
+    color: #FF6F6F;
+}
+body .bg-color-reset a {
+    color: #FF6F6F;
+}
+.btn {
+    background-color: #FF6F6F;
+    border: 1px solid #FF6F6F;
+}
+
+/*  :: ::::::::: :: */
+/*  :: Dropcaps  :: */
+/*  :: ::::::::: :: */
+.dropcap {
+    color: #FF6F6F;
+}
+
+/*  :: :::::::::: :: */
+/*  :: Bockquote  :: */
+/*  :: :::::::::: :: */
+blockquote {
+    border-left: 3px solid #FF6F6F;
+}
+    blockquote .author {
+        color: #FF6F6F;
+    }
+/* :: RTL :: */
+.text-right blockquote {
+    border-right: 3px solid #FF6F6F;
+}
+
+/*  :: ::::: :: */
+/*  :: List  :: */
+/*  :: ::::: :: */
+ul.circle > li:before,
+ul.asterisk > li:before,
+ul.bolt > li:before,
+ul.rocket > li:before,
+ul.dash > li:before {
+    color: #FF6F6F;
+}
+
+/*  :: ::::::: :: */
+/*  :: Tables  :: */
+/*  :: ::::::: :: */
+.table.table-colored thead th {
+    background-color: #FF6F6F;
+}
+
+/*  :: ::::::::::: :: */
+/*  :: Navigation  :: */
+/*  :: ::::::::::: :: */
+.tp-bullets .bullet.selected,
+.tp-bullets .bullet:hover,
+.tp-bullets .bullet:focus,
+.fc-pagi a.selected,
+.fc-pagi a:hover,
+.fc-pagi a:focus {
+    background: #FF6F6F;
+}
+
+/*  :: :::::: :: */
+/*  :: Loader :: */
+/*  :: :::::: :: */
+.fc-spinner > .fc-spinner-back {
+    background: #FF6F6F;
+}
+
+/*  :: :::::: :: */
+/*  :: Header :: */
+/*  :: :::::: :: */
+#header #mobile-menu a:not(.logo).active,
+#header #mobile-menu a:not(.logo):hover {
+    color: #FF6F6F;
+}
+#header .navbar ul li > a:hover,
+#header .navbar ul li.active > a {
+    color: #FF6F6F;
+}
+
+/*  :: Slide bar :: */
+#header .navbar .navbar-bar {
+    background-color: #FF6F6F;
+}
+
+/*  :: ::::::: :: */
+/*  :: Article :: */
+/*  :: ::::::: :: */
+.fc-article-nav ul li .fc-nav:hover {
+    color: #FF6F6F;
+}
+/*  :: Type :: */
+.fc-article-type {
+    background: #FF6F6F;
+}
+/*  :: Tags :: */
+.fc-tags > a:hover {
+    background: #FF6F6F;
+}
+/*  :: Share / Details :: */
+.fc-article-details li a {
+    color: #FF6F6F;
+}
+
+/*  :: :::::::::: :: */
+/*  :: Pagination :: */
+/*  :: :::::::::: :: */
+.fc-pagination a:hover {
+    background: #FF6F6F;
+}
+
+/*  :: ::::::::: :: */
+/*  :: Progress  :: */
+/*  :: ::::::::: :: */
+.progress {
+    border: 3px solid #FF6F6F;
+}
+    .progress .bar {
+        background-color: #FF6F6F;
+    }
+        .progress .bar.stripes {
+            background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25,  #FF6F6F), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5,  #FF6F6F), color-stop(0.75,  #FF6F6F), color-stop(0.75, transparent), to(transparent));
+            background-image: linear-gradient(45deg,  #FF6F6F 25%, transparent 25%, transparent 50%,  #FF6F6F 50%,  #FF6F6F 75%, transparent 75%, transparent);
+            background: #FF6F6F\9;
+        }
+
+/*  :: :::::::::: :: */
+/*  :: Multimedia :: */
+/*  :: :::::::::: :: */
+.mejs-controls .mejs-time-rail .mejs-time-current {
+    background: #FF6F6F;
+}
+
+/*  :: :::::::: :: */
+/*  :: Icon box :: */
+/*  :: :::::::: :: */
+
+/*  :: Style 2 :: */
+.fc-iconbox.fc-style-2:hover .fc-iconbox-heading:before,
+.fc-iconbox.fc-style-2:hover .fc-iconbox-content:before {
+    background: #FF6F6F;
+}
+.fc-iconbox.fc-style-2:hover .fc-iconbox-heading:after,
+.fc-iconbox.fc-style-2:hover .fc-iconbox-content:after {
+    background: #FF6F6F;
+}
+.bg-color-invert .fc-iconbox.fc-style-2 .fc-iconbox-heading:before,
+.bg-color-invert .fc-iconbox.fc-style-2 .fc-iconbox-heading:after,
+.bg-color-invert .fc-iconbox.fc-style-2 .fc-iconbox-content:before,
+.bg-color-invert .fc-iconbox.fc-style-2 .fc-iconbox-content:after  {
+    background: #FF6F6F;
+}
+
+/*  :: Style 3 :: */
+.fc-iconbox.fc-style-3 .fc-iconbox-heading .icon {
+    background-color: #FF6F6F;
+}
+
+/*  :: Style 4 :: */
+.fc-iconbox.fc-style-4:hover .fc-iconbox-heading:before,
+.fc-iconbox.fc-style-4:hover .fc-iconbox-heading:after {
+    background-color: #FF6F6F;
+}
+.fc-iconbox.fc-style-4.fc-hover .fc-iconbox-content {
+    background-color: #FF6F6F;
+}
+
+/*  :: ::: :: */
+/*  :: Tab :: */
+/*  :: ::: :: */
+.fc-tab .fc-tab-heading {
+    background: #FF6F6F;
+}
+
+/*  :: ::::::::: :: */
+/*  :: Accordion :: */
+/*  :: ::::::::: :: */
+.fc-accordion {
+    background: #FF6F6F;
+}
