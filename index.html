@@ -47,111 +47,6 @@
 
 
 
-	<section id="contact" class="bg-black bg-color-invert">
-
-		<a class="fc-close" href="#"><i class="fa fa-times"></i></a>
-
-		<!-- Google Maps -->
-		<div id="map"></div>
-
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-4">
-
-					<div class="title title-main">
-						<h4>Get in touch</h4>
-					</div>
-					<div class="text">
-						<p>Sagittis eros cursus porttitor diam nibh habitant ullamcorper, non consectetur phasellus dictumst pellentesque amet, ultricies vulputate scelerisque commodo varius tristique. </p>
-					</div>
-
-					<address>
-						<div class="row">
-							<div class="col-sm-4">
-								<p><b>Address:</b></p>
-							</div>
-							<div class="col-sm-8">
-								<p>322 Victoria Street,<br /> Darlinghurst NSW 2010,<br />Australia</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-sm-4">
-								<p><b>Phone:</b></p>
-							</div>
-							<div class="col-sm-8">
-								<p>1800-2233-4455</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-sm-4">
-								<p><b>Fax:</b></p>
-							</div>
-							<div class="col-sm-8">
-								<p>1800-2233-4455</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-sm-4">
-								<p><b>Email:</b></p>
-							</div>
-							<div class="col-sm-8">
-								<p><a href="mailto:victoria@yoursite.com">victoria@yoursite.com</a></p>
-							</div>
-						</div>
-					</address>
-				</div><!-- .col-sm-4 -->
-				<div class="col-sm-7">
-
-					<div class="title title-main">
-						<h4>Send message</h4>
-					</div>
-
-					<form action="php/contact.php" method="POST" class="form-validate" id="contact-form">
-
-						<div class="row">
-							<div class="col-sm-6">
-
-								<div class="form-field">
-									<div class="placeholder">
-										<label for="name">Name<span class="require">required</span></label>
-										<input class="form-control" type="text" maxlength="100" name="name" id="name" minlength="2" required />
-									</div>
-								</div><!-- .form-field -->
-								<div class="form-field">
-									<div class="placeholder">
-										<label for="email">Email<span class="require">required</span></label>
-										<input class="form-control" type="email" name="email" id="email" required />
-									</div>
-								</div><!-- .form-field -->
-								<div class="form-field">
-									<div class="placeholder">
-										<label for="subject">Subject<span class="require">required</span></label>
-										<input class="form-control" type="text" name="subject" id="subject" required />
-									</div>
-								</div><!-- .form-field -->
-
-							</div><!-- .col-sm-6 -->
-							<div class="col-sm-6">
-
-								<div class="form-field">
-									<div class="placeholder">
-										<label for="message">Message<span class="require">required</span></label>
-										<textarea class="form-control" maxlength="5000" rows="9" name="message" id="message" required></textarea>
-									</div>
-								</div><!-- .form-field -->
-
-							</div><!-- .col-sm-6 -->
-						</div><!-- .row -->
-
-						<div class="form-field text-right">
-							<button type="submit" class="btn">Send Message</button>
-						</div><!-- .form-field -->
-					</form>
-
-				</div><!-- .col-sm-7 -->
-			</div>
-		</div>
-	</section>
 
 	<section id="home"></section>
 
@@ -863,8 +758,8 @@
 	<div id="main" role="main">
 		<div class="container">
 
+			<!-- SECTION KEY CONCEPTS -->
 			<section class="fc-section" id="keyConcepts">
-
 				<div class="title title-section">
 					<h2>Services</h2>
 					<div class="separator"><i class="fa fa-folder-open"></i></div>
@@ -886,10 +781,8 @@
 								</div>
 							</div><!-- .fc-iconbox-content -->
 						</div><!-- .fc-iconbox -->
-
 					</div><!-- .col-sm-4 -->
 					<div class="col-sm-4" data-animate="rotateInUpLeft">
-
 						<div class="fc-iconbox fc-style-4 fc-hover">
 							<div class="fc-iconbox-heading">
 
@@ -976,8 +869,12 @@
 
 					</div><!-- .col-sm-4 -->
 				</div><!-- .row -->
-
 			</section>
+			<!-- END SECTION KEY CONCEPTS -->
+
+
+
+			<!-- SECTION DOD -->
 			<section class="fc-section bg-black bg-color-invert" id="dod">
 
 				<div class="title title-section">
@@ -1227,6 +1124,10 @@
 				</div><!-- .fc-section-full-width -->
 
 			</section>
+			<!-- END SECTION DOD -->
+
+
+			<!-- SECTION REFERENCES -->
 			<section class="fc-section bg-azure bg-color-invert" id="references">
 
 				<div class="title title-section">
@@ -1330,8 +1231,10 @@
 				</div><!-- .fc-section-full-width -->
 
 			</section>
+			<!-- END SECTION REFERENCES -->
 
-						<section class="fc-section bg-white" id="about">
+			<!-- SECTION ABOUT -->
+			<section class="fc-section bg-white" id="about">
 
 				<div class="row">
 					<div class="col-sm-8">
@@ -1364,170 +1267,13 @@
 				</div><!-- .row -->
 
 			</section>
-
-			<section class="fc-section">
-
-				<div class="row-inline">
-					<div class="row">
-						<div class="col-md-5">
-
-							<div class="fc-counter action">
-								<div class="title">Seo: <span class="value">0</span> %</div>
-								<div class="progress">
-									<div class="bar" data-min="0" data-value="78"></div>
-								</div><!-- .progress -->
-							</div><!-- .fc-counter -->
-
-							<div class="fc-counter action">
-								<div class="title">HTML5 / CSS3: <span class="value">0</span> %</div>
-								<div class="progress">
-									<div class="bar" data-min="0" data-value="95"></div>
-								</div><!-- .progress -->
-							</div><!-- .fc-counter -->
-
-							<div class="fc-counter action">
-								<div class="title">Design: <span class="value">0</span> %</div>
-								<div class="progress">
-									<div class="bar" data-min="0" data-value="67"></div>
-								</div><!-- .progress -->
-							</div><!-- .fc-counter -->
-
-						</div><!-- .col-md-5 -->
-						<div class="col-md-7">
-
-							<div class="row">
-								<div class="col-sm-4">
-
-									<div class="fc-counter fc-round action">
-										<div class="progress">
-											<input type="text" value="0" class="bar" data-value="532" data-min="0" data-max="685" data-fgColor="#4bc9c5" data-bgColor="transparent">
-										</div>
-										<div class="fc-counter-inner">
-											<div class="icon"><img src="uploads/images/icons/icon.png" alt="Icon"></div>
-											<hr class="devider">
-											<span class="value">0</span>
-										</div>
-										<div class="title">Awward Winner</div>
-									</div><!-- .fc-counter -->
-
-								</div><!-- .col-sm-4 -->
-								<div class="col-sm-4">
-
-									<div class="fc-counter fc-round action">
-										<div class="progress">
-											<input type="text" value="0" class="bar" data-value="88" data-min="0" data-max="362" data-fgColor="#4bc9c5" data-bgColor="transparent">
-										</div>
-										<div class="fc-counter-inner">
-											<div class="icon"><img src="uploads/images/icons/icon.png" alt="Icon"></div>
-											<hr class="devider">
-											<span class="value">0</span>
-										</div>
-										<div class="title">Days From Beginning</div>
-									</div><!-- .fc-counter -->
-
-								</div><!-- .col-sm-4 -->
-								<div class="col-sm-4">
-
-									<div class="fc-counter fc-round action">
-										<div class="progress">
-											<input type="text" value="0" class="bar" data-value="255" data-min="0" data-max="452" data-fgColor="#4bc9c5" data-bgColor="transparent">
-										</div>
-										<div class="fc-counter-inner">
-											<div class="icon"><img src="uploads/images/icons/icon.png" alt="Icon"></div>
-											<hr class="devider">
-											<span class="value">0</span>
-										</div>
-										<div class="title">Sites Created</div>
-									</div><!-- .fc-counter -->
-
-								</div><!-- .col-sm-4 -->
-							</div><!-- .row -->
-
-						</div><!-- .col-md-7 -->
-					</div><!-- .row -->
-				</div><!-- .row-inline -->
-
-			</section>
-			<section class="fc-section bg-black bg-half bg-color-invert">
-
-				<div class="row">
-					<div class="col-sm-6">
-
-						<div class="fc-banner fc-clear">
-							<div class="title">
-								<h3>Yes!!! I like it!</h3>
-								<h6>and i ready to Buy This <b>awesome</b> theme</h6>
-							</div>
-							<div class="text">
-
-								<p><a class="btn btn-big">BUY TEMPLATE</a></p>
-							</div>
-						</div><!-- .fc-banner -->
-
-					</div><!-- .col-sm-6 -->
-					<div class="col-sm-6">
-
-						<div class="fc-banner fc-clear">
-							<div class="title">
-								<h3>NOT YET :)</h3>
-								<h6>i want know more features</h6>
-							</div>
-							<div class="text">
-
-								<p><a class="btn btn-big">KNOW MORE</a></p>
-							</div>
-						</div><!-- .fc-banner -->
-
-					</div><!-- .col-sm-6 -->
-				</div><!-- .row -->
-
-			</section>
+			<!-- END SECTION ABOUT -->
 		</div><!-- .container -->
 	</div><!-- #main -->
 
 	<footer id="footer" class="bg-black bg-color-invert" role="contentinfo">
 		<div class="container">
-
-			<div class="row">
-				<div class="col-md-6">
-
-					<div class="title title-main">
-						<h5>SUBSCRIBE TO OUR NEWSLETTER:</h5>
-					</div>
-					<form action="php/newsletter.php" method="POST" class="form-validate">
-						<button type="submit" class="btn btn-form btn-icon"><i class="fa fa-envelope-o"></i></button>
-						<div class="form-field">
-							<div class="placeholder">
-								<label for="subscribe">your email...</label>
-								<input class="form-control" type="email" maxlength="100" name="subscribe" id="subscribe" required>
-							</div>
-						</div>
-					</form>
-
-				</div><!-- .col-md-6 -->
-				<div class="col-md-6">
-
-					<div class="title title-main">
-						<h5>Get in touch:</h5>
-					</div>
-					<div class="text">
-						<a class="btn btn-icon" href="#"><i class="icomoon-skype"></i></a>
-						<a class="btn btn-icon" href="#"><i class="icomoon-mail4"></i></a>
-						<a class="btn btn-icon" href="#"><i class="icomoon-location"></i></a>
-						<a class="btn btn-icon" href="#"><i class="icomoon-dribbble"></i></a>
-						<a class="btn btn-icon" href="#"><i class="icomoon-pinterest"></i></a>
-						<a class="btn btn-icon" href="#"><i class="icomoon-facebook"></i></a>
-						<a class="btn btn-icon" href="#"><i class="icomoon-twitter"></i></a>
-						<a class="btn btn-icon" href="#"><i class="icomoon-google-plus"></i></a>
-					</div>
-
-				</div><!-- .col-md-6 -->
-			</div><!-- .row -->
-
-			<hr class="devider" />
-
 			<p class="text-center">©2014 TALISMAN. All rights reserved.</p>
-
 		</div><!-- .container -->
 	</footer><!-- #footer -->
 
