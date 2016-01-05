@@ -50,7 +50,7 @@
 			color : black;
 		}
 
-		a[bubbletooltip]:before
+/*		a[bubbletooltip]:before
 		{
 			content: "";
 			position: absolute;
@@ -60,7 +60,7 @@
 			visibility: hidden;
 			bottom: -12px;
 			right: -20px;
-		}
+		}*/
 
 		a[bubbletooltip]:after
 		{
@@ -70,7 +70,7 @@
 			right: -148px;
 			bottom: -16px;
 			width:120px;
-			background: #292f45;
+			background: #000000;
 			color: #FFFFFF;
 			padding: 5px 10px;
 			-moz-border-radius: 6px;
@@ -85,6 +85,11 @@
 			visibility: visible;
 			-moz-transition: visibility 0s linear .3s;
 		}
+
+		a[bubbletooltip]:hover
+        {
+            font-weight: bold;
+        }
 
 	</style>
 
@@ -118,7 +123,6 @@
 					<ul class="dropdown">
 						<li><a href="#http">Browsing</a></li>
 						<li><a href="#smtp">Sending an email</a></li>
-						<li><a href="#ftp">Transfering files</a></li>
 					</ul>
 				</li>
 				<li><a href="#references">References</a></li>
@@ -374,7 +378,7 @@
 						</section>
 						<!-- END SECTION DOD -->
 
-
+						<!-- SECTION HTTP -->
 						<section class="fc-section" id="http">
 							<div class="title title-section">
 								<h2>HTTP</h2>
@@ -382,37 +386,22 @@
 							</div><!-- .title-section -->
 
 							<div class="row">
-								<div class="col-sm-6" data-animate="rotateInUpLeft">
+								<div class="col-sm-12" data-animate="rotateInUpLeft">
 									<div class="fc-iconbox fc-style-4 fc-hover">
 										<div class="fc-iconbox-heading">
-
 											<div class="icon"><img src="uploads/images/icons/application_http.jpg" alt="Icon"></div>
 											<div class="title"> <h5>Application Layer</h5></div>
 										</div><!-- .fc-iconbox-heading -->
 										<div class="fc-iconbox-content">
 											<div class="text">
-												<p>When looking at a website such as {example website name here}, the application
+												<p>When looking at a website such as www.google.com, the application
 													layer would be the browser used to view the website. The browser would
 													be able to interpret the HyperText Markup Language (HTML). It is the layer from which the actual
 													communication (whatever it may be) is initiated.</p>
 												</div><!-- .text -->
 											</div><!-- .fc-iconbox-content -->
 										</div><!-- .fc-iconbox -->
-									</div><!-- .col-sm-4 -->
-									<div class="col-sm-6" data-animate="rotateInUpLeft">
-										<div class="fc-iconbox fc-style-4 fc-hover">
-											<div class="fc-iconbox-heading">
-
-												<div class="icon"><img src="uploads/images/icons/application_http.jpg" alt="Icon"></div>
-												<div class="title"> <h5>Application Layer</h5></div>
-											</div><!-- .fc-iconbox-heading -->
-											<div class="fc-iconbox-content">
-												<div class="text">
-													<p>TODO: Something</p>
-												</div>
-											</div><!-- .fc-iconbox-content -->
-										</div><!-- .fc-iconbox -->
-									</div><!-- .col-sm-4 -->
+									</div><!-- .col-sm-12 -->
 								</div><!-- .row -->
 
 								<div class="row">
@@ -460,7 +449,7 @@
 														<a href="#" bubbletooltip="Accept only these types of data back">
 															Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;
 															q=0.8\r\n</a><br/>
-															<a href="#"
+														<a href="#"
 															bubbletooltip="If the website only accepts secure connections, change it to a secure connection">
 															Upgrade-Insecure-Requests: 1\r\n</a><br/>
 															<a href="#" bubbletooltip="This is the kind of system I'm running">
@@ -667,7 +656,7 @@
 								</div><!-- .row -->
 
 								<div class="row">
-									<div class="col-sm-6" data-animate="rotateInUpLeft">
+									<div class="col-sm-12" data-animate="rotateInUpLeft">
 										<div class="fc-iconbox fc-style-4 fc-hover">
 											<div class="fc-iconbox-heading">
 												<div class="icon"><img src="uploads/images/icons/icon.png" alt="Icon"></div>
@@ -683,6 +672,332 @@
 											</div><!-- .fc-iconbox-content -->
 										</div><!-- .fc-iconbox -->
 									</div><!-- .col-sm-6 -->
+								</div><!-- .row -->
+
+								<div class="row">
+									<div class="col-sm-6" data-animate="rotateInUpLeft">
+										<div class="fc-iconbox fc-style-4 fc-hover">
+											<div class="fc-iconbox-heading">
+												<div class="icon"><img src="uploads/images/icons/icon.png" alt="Icon"></div>
+												<div class="title"> <h5>Link Layer</h5></div>
+											</div><!-- .fc-iconbox-heading -->
+											<div class="fc-iconbox-content">
+												<div class="text">
+													<p>The link layer is used to move packets from one network location to another.
+													The packets that are transferred are called frames. Each frame can be visualised
+													as hexadecimal or bits, the example of a frame here is hexadecimal. Each paragraph
+													can be interpreted as one line from each of the layers starting with the internetwork,
+													followed by the transport layer and finishing with the utility. The syntax for
+													the hardware is also a part of the frame which is the first part.</p>
+												</div><!-- .text -->
+											</div><!-- .fc-iconbox-content -->
+										</div><!-- .fc-iconbox -->
+									</div><!-- .col-sm-6 -->
+
+									<div class="col-sm-6" data-animate="rotateInUpLeft">
+										<div class="fc-iconbox fc-style-4 fc-hover">
+											<div class="fc-iconbox-heading">
+												<div class="icon"><img src="uploads/images/icons/icon.png" alt="Icon"></div>
+												<div class="title"> <h5>Link Layer</h5></div>
+											</div><!-- .fc-iconbox-heading -->
+											<div class="fc-iconbox-content">
+												<div class="text">
+													<p><a href="#" bubbletooltip="Physical: Ethernet II">
+													50 6a 03 43 69 1b c4 2c 03 24 55 c4 08 00</a>
+													<a href="#" bubbletooltip="IP">
+													45 00 02 45 b1 56 40 00 40 06 00 00 c0 a8 00 07 98 4e 76 33</a>
+													<a href="#" bubbletooltip="TCP">
+													f8 2b 00 50 a5 c4 1d 4e a8 52 86 38 80 18 ff
+													ff d1 68 00 00 01 01 08 0a 4b 1b ab 3b cb 41 7b 67</a>
+													<a href="#" bubbletooltip="HTTP">
+													47 45 54 20 2f 20 48 54 54 50 2f 31 2e 31 0d 0a
+													48 6f 73 74 3a 20 77 77 77 2e 73 6f 74 6f 6e 2e
+													6e 3a 20 6b 65 65 70 2d 61 6c 69 76 65 0d 0a 41
+													63 63 65 70 74 3a 20 74 65 78 74 2f 68 74 6d 6c
+													2c 61 70 70 6c 69 63 61 74 69 6f 6e 2f 78 68 74
+													6d 6c 2b 78 6d 6c 2c 61 70 70 6c 69 63 61 74 69
+													6f 6e 2f 78 6d 6c 3b 71 3d 30 2e 39 2c 69 6d 61
+													67 65 2f 77 65 62 70 2c 2a 2f 2a 3b 71 3d 30 2e
+													38 0d 0a 55 73 65 72 2d 41 67 65 6e 74 3a 20 4d
+													6f 7a 69 6c 6c 61 2f 35 2e 30 20 28 4d 61 63 69
+													2d 73 69 3b 20 5f 67 61 3d 47 41 31 2e 33 2e 31
+													30 30 32 31 32 33 32 39 32 2e 31 34 34 33 31 37
+													37 34 39 37 3b 20 72 75 6e 49 64 3d 2d 32 32 34
+													32 39 36 30 39 39 39 39 35 37 33 31 38 38 38 32
+													3b 20 75 73 69 64 3d 36 6e 68 6e 6f 6b 5a 63 66
+													30 65 2b 2b 76 74 64 49 2f 43 65 2b 41 5f 5f 0d
+													0a</a></p>
+												</div>
+											</div><!-- .fc-iconbox-content -->
+										</div><!-- .fc-iconbox -->
+									</div><!-- .col-sm-4 -->
+								</div><!-- .row -->
+
+								<div class="row">
+									<div class="col-sm-12" data-animate="rotateInUpLeft">
+										<div class="fc-iconbox fc-style-4 fc-hover">
+											<div class="fc-iconbox-heading">
+
+												<div class="icon"><img src="uploads/images/icons/ethernet.png" alt="Icon"></div>
+												<div class="title"> <h5>Physical Layer</h5></div>
+											</div><!-- .fc-iconbox-heading -->
+											<div class="fc-iconbox-content">
+												<div class="text">
+													<p>The physical layer is made up of the hardware that links computers together.
+													In your house you probably have cables that come into the house from the street.
+													These will then be connected to a router that will send out a wireless connection
+													or a wired connection such as ethernet. The wired connections communicate
+													through their ports with the rest of the computer. The ports, ethernet cables and
+													fibre optic cables are all part of the physical layer.</p>
+													<p>The computers then send electronic messages down the wires
+													 (or using radiowaves) to transmit and receive</p>
+												</div>
+											</div><!-- .fc-iconbox-content -->
+										</div><!-- .fc-iconbox -->
+									</div><!-- .col-sm-12 -->
+								</div><!-- .row -->
+						<!-- END SECTION HTTP -->
+
+						<!-- SECTION SMTP -->
+						<section class="fc-section" id="smtp">
+							<div class="title title-section">
+								<h2>SMTP</h2>
+								<div class="separator"><i class="fa fa-globe"></i></div>
+							</div><!-- .title-section -->
+
+							<div class="row">
+								<div class="col-sm-12" data-animate="rotateInUpLeft">
+									<div class="fc-iconbox fc-style-4 fc-hover">
+										<div class="fc-iconbox-heading">
+											<div class="icon"><img src="uploads/images/icons/application_smtp.png" alt="Icon"></div>
+											<div class="title"> <h5>Application Layer</h5></div>
+										</div><!-- .fc-iconbox-heading -->
+										<div class="fc-iconbox-content">
+											<div class="text">
+												<p>When sending or receiving an email, the application layer would be the email
+												client such as Microsoft Outlook or Mozilla Thunderbird. It is the layer from which the actual
+												communication (whatever it may be) is initiated.</p>
+											</div><!-- .text -->
+										</div><!-- .fc-iconbox-content -->
+									</div><!-- .fc-iconbox -->
+								</div><!-- .col-sm-12 -->
+							</div><!-- .row -->
+
+								<div class="row">
+									<div class="col-sm-6" data-animate="rotateInUpLeft">
+										<div class="fc-iconbox fc-style-4 fc-hover">
+											<div class="fc-iconbox-heading">
+
+												<div class="icon"><img src="uploads/images/icons/icon.png" alt="Icon"></div>
+												<div class="title"> <h5>Utility Layer</h5></div>
+											</div><!-- .fc-iconbox-heading -->
+											<div class="fc-iconbox-content">
+												<div class="text">
+													<p>The utility layer contains protocols for specific applications. These include:
+													Domain Name System (DNS), Internet Relay Chat (IRC), Secure Shell (SSH) and Voice
+													over IP (VOIP). This differs from the layers below because almost all of these
+													will then use the same transport and internet protocols.
+													</p>
+													<p>For sending and receiving emails the main protocol is Simple Mail Transfer
+													Protocol (SMTP) is used. It is a series of connections made to server, its format
+													displayed to the right. The initial connection is made by opening the link but nothing
+													is written).
+													</p>
+												</div>
+											</div><!-- .fc-iconbox-content -->
+										</div><!-- .fc-iconbox -->
+									</div><!-- .col-sm-4 -->
+									<div class="col-sm-6" data-animate="rotateInUpLeft">
+										<div class="fc-iconbox fc-style-4 fc-hover">
+											<div class="fc-iconbox-heading">
+
+												<div class="icon"><img src="uploads/images/icons/icon.png" alt="Icon"></div>
+												<div class="title"> <h5>Utility Layer</h5></div>
+											</div><!-- .fc-iconbox-heading -->
+											<div class="fc-iconbox-content">
+												<div class="text">
+													<p>
+													SERVER: <a href="#" bubbletooltip="Hello I am a mail server at example.com and you must use ESMTP to communicate with me">
+															220 SMTP.example.com ESMTP</a>
+													CLIENT: <a href="#" bubbletooltip="Hello I'm sending emails on behalf of this domain">
+															HELO mydomain.com</a></br>
+													SERVER: <a href="#" bubbletooltip="Hello mydomain.com">
+															250 Hello mydomain.com</a>
+													CLIENT: <a href="#" bubbletooltip="I want to send from an email from sender@mydomain.com">
+															MAIL FROM: <sender@mydomain.com></a></br>
+													SERVER: <a href="#" bubbletooltip="Ok go ahead">
+															250 Ok</a>
+													CLIENT: <a href="#" bubbletooltip="I want the email to go to recipient@anotherdomain.com">
+															RCPT TO: <recipient@anotherdomain.com></a></br>
+													SERVER: <a href="#" bubbletooltip="Ok you can send to this domain">
+															250 Accepted</a>
+													CLIENT: <a href="#" bubbletooltip="I'm ready to send the body of the email">
+															DATA</a></br>
+													SERVER: <a href="#" bubbletooltip="Ok remember to put '.' on a line by itself to say you've finished">
+															354 Enter message, ending with "." on a line by itself</a>
+													CLIENT: <a href="#" bubbletooltip="Content of the message">
+															(content)</a>
+													CLIENT: <a href="#" bubbletooltip=". (see I remembered!)">
+															.</a></br>
+													SERVER: <a href="#" bubbletooltip="Ok, I've got that">
+															250 Ok</a>
+													CLIENT: <a href="#" bubbletooltip="Please close the connection.">
+															QUIT</a></br>
+													SERVER: <a href="#" bubbletooltip="Ok I'm closing the channel between us, Bye!">
+															221 www.example.com closing connection</a>
+													</p>
+												</div><!-- .text -->
+											</div><!-- .fc-iconbox-content -->
+										</div><!-- .fc-iconbox -->
+									</div><!-- .col-sm-6 -->
+								</div><!-- .row -->
+
+								<div class="row">
+									<div class="col-sm-6" data-animate="rotateInUpLeft">
+										<div class="fc-iconbox fc-style-4 fc-hover">
+											<div class="fc-iconbox-heading">
+												<div class="icon"><img src="uploads/images/icons/icon.png" alt="Icon"></div>
+													<div class="title"> <h5>Transport Layer</h5></div>
+											</div><!-- .fc-iconbox-heading -->
+											<div class="fc-iconbox-content">
+												<div class="text">
+													<p>The transport layer contains protocols that deal with the moving of packets.
+														It splits the message into packets takes each of the packets and puts a "header"
+														with metadata to then send through the network. Below shows the process. Particularly
+														with TCP the headers contain data to then ensure the reliable delivery of packets.
+														Other protocols such as UDP are used when reliable delivery is not so key.</p>
+													<p>If this data was split into three packets then the data structure would change,
+														shown in on right</p>
+												</div> <!-- .text -->
+											</div><!-- .fc-iconbox-content -->
+										</div><!-- .fc-iconbox -->
+									</div><!-- .col-sm-6 -->
+
+									<div class="col-sm-6" data-animate="rotateInUpLeft">
+										<div class="fc-iconbox fc-style-4 fc-hover">
+											<div class="fc-iconbox-heading">
+												<div class="icon"><img src="uploads/images/icons/icon.png" alt="Icon"></div>
+												<div class="title"> <h5>Transport Layer</h5></div>
+											</div><!-- .fc-iconbox-heading -->
+											<div class="fc-iconbox-content">
+												<div class="text">
+													<TABLE BORDER=2 CELLPADDING=10>
+														<TR>
+															<TD><b>Header</b></TD><TD><b>Data</b></TD>
+														</TR>
+														<TR>
+															<TD><a href="#" bubbletooltip="Source Port: Port from which the TCP protocol originated">
+																25</a></TD>
+															<TD ROWSPAN=4><a href="#" bubbletooltip="Packet number 1 data">220</a></TD>
+														</TR>
+														<TR>
+															<TD><a href="#" bubbletooltip="Destination Port: Port to where the protocol is destined">
+																587</a></TD>
+														</TR>
+														<TR>
+															<TD><a href="#" bubbletooltip="Sequence Number: A random number initially but subsequent packets are
+																the initial number added to the length of the packet">
+																2781093198</a></TD>
+														</TR>
+														<TR>
+															<TD><a href="#" bubbletooltip="Acknowledgment Number: The acknowledgment number contains the value of
+																the next sequence number that is expected to be received.">
+																2781093199</a></TD>
+														</TR>
+													</TABLE>
+
+													<TABLE BORDER=2 CELLPADDING=10>
+														<TR>
+															<TD><a href="#" bubbletooltip="Source Port packet 2">
+																25</a></TD>
+															<TD ROWSPAN=4><a href="#" bubbletooltip="Packet number 2 data">
+																SMTP.example.com</a></TD>
+														</TR>
+														<TR>
+															<TD><a href="#" bubbletooltip="Destination Port packet 2">
+																587</a></TD>
+														</TR>
+														<TR>
+															<TD><a href="#" bubbletooltip="Sequence Number packet 2">2781093199</a></TD>
+														</TR>
+														<TR>
+															<TD><a href="#" bubbletooltip="Acknowledgment Number packet 2">2781093200</a></TD>
+														</TR>
+													</TABLE>
+
+													<TABLE BORDER=2 CELLPADDING=10>
+														<TR>
+															<TD><a href="#" bubbletooltip="Source Port packet 3">
+																25</a></TD>
+															<TD ROWSPAN=4><a href="#" bubbletooltip="Packet number 3 data">
+																ESMTP</a></TD>
+														</TR>
+														<TR>
+															<TD><a href="#" bubbletooltip="Destination Port packet 3">
+																587</a></TD>
+														</TR>
+														<TR>
+															<TD><a href="#" bubbletooltip="Sequence Number packet 3">2781093200</a></TD>
+														</TR>
+														<TR>
+															<TD><a href="#" bubbletooltip="Acknowledgment Number packet 3">2781093205</a></TD>
+														</TR>
+													</TABLE>
+												</div><!-- .text -->
+											</div><!-- .fc-iconbox-content -->
+										</div><!-- .fc-iconbox -->
+									</div><!-- .col-sm-6 -->
+								</div><!-- .row -->
+
+								<div class="row">
+									<div class="col-sm-6" data-animate="rotateInUpLeft">
+										<div class="fc-iconbox fc-style-4 fc-hover">
+											<div class="fc-iconbox-heading">
+
+												<div class="icon"><img src="uploads/images/icons/icon.png" alt="Icon"></div>
+												<div class="title"> <h5>Internetwork Layer</h5></div>
+											</div><!-- .fc-iconbox-heading -->
+											<div class="fc-iconbox-content">
+												<div class="text">
+													<p>	The internetwork contains protocols by which the packets made in the transport layer
+														are sent to other locations.
+														It also adds its own header to sends some of its own metadata.
+													</p>
+													<TABLE BORDER=2>
+														<TR>
+															<TD><a href="#" bubbletooltip="The version number of the protocol">
+																Version</TD>
+															<TD><a href="#" bubbletooltip="The length of the header for the transport layer">
+																Header Length</a></TD>
+															<TD><a href="#" bubbletooltip="Length of the message to be sent">
+																Total Length</a></TD>
+															<TD><a href="#" bubbletooltip="Computer IP address that originated the communication">
+																Source</a></TD>
+															<TD><a href="#" bubbletooltip="Where the communication being sent">
+																Destination</a></TD>
+															<TD><a href="#" bubbletooltip="How many 'hops' a communication can take before it dies">
+																Time to live</a></TD>
+															<TD><a href="#" bubbletooltip="The transport protocol that's being used.">
+																Protocol</a></TD>
+														</TR>
+														<TR>
+															<TD>4</TD>
+															<TD>20</TD>
+															<TD>7</TD>
+															<TD>192.168.0.7</TD>
+															<TD>152.78.118.51</TD>
+															<TD>64</TD>
+															<TD>6</TD>
+														</TR>
+													</TABLE>
+													<p> The internet forms a path
+														through the computers connected, this is demonstrated below this to the right
+														The most common protocol in this layer is IP which is used here.
+													</p>
+												</div><!-- .text -->
+											</div><!-- .fc-iconbox-content -->
+										</div><!-- .fc-iconbox -->
+									</div><!-- .col-sm-6 -->
 
 									<div class="col-sm-6" data-animate="rotateInUpLeft">
 										<div class="fc-iconbox fc-style-4 fc-hover">
@@ -692,11 +1007,86 @@
 											</div><!-- .fc-iconbox-heading -->
 											<div class="fc-iconbox-content">
 												<div class="text">
-													<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
+													traceroute to 
+														<a href="#" bubbletooltip="IP address of which to work out route">8.8.8.8</a>
+														(<a href="#" bubbletooltip="A google server">8.8.8.8</a>),
+														<a href="#" bubbletooltip="time to live">64 hops max</a>, 52 byte packets
+														routerlogin.net (192.168.0.1)</br>
+														sotn-core-2a-xe-111-0.network.virginmedia.net (62.255.45.57)</br>
+														popl-bb-1b-ae0-0.network.virginmedia.net (62.254.42.90)</br>
+														eislou2-ic-1-ae0-0.network.virginmedia.net (62.254.42.18)</br>
+														m350-mp2.cvx3-a.ltn.dial.ntli.net (213.104.85.94)</br>
+														213.104.85.90 (213.104.85.90)</br>
+														216.239.41.207 (216.239.41.207)</br>
+														72.14.234.33 (72.14.234.33)</br>
+														72.14.233.249 (72.14.233.249)</br>
+														74.125.37.119 (74.125.37.119)</br>
+														216.239.57.161 (216.239.57.161)</br>
+														209.85.244.199 (209.85.244.199)</br>
+														google-public-dns-a.google.com (8.8.8.8)
+												</div><!-- .text -->
+											</div><!-- .fc-iconbox-content -->
+										</div><!-- .fc-iconbox -->
+									</div><!-- .col-sm-6 -->
+								</div><!-- .row -->
 
-													<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
+								<div class="row">
+									<div class="col-sm-12" data-animate="rotateInUpLeft">
+										<div class="fc-iconbox fc-style-4 fc-hover">
+											<div class="fc-iconbox-heading">
+												<div class="icon"><img src="uploads/images/icons/icon.png" alt="Icon"></div>
+												<div class="title"> <h5>Network Layer</h5></div>
+											</div><!-- .fc-iconbox-heading -->
+											<div class="fc-iconbox-content">
+												<div class="text">
+													<p>The network layer deals with all the other types of connections apart 
+													from the internet. The protocols within this layer deal with the "packet" net.
+													In the past local networks would have had their own networking protocols to
+													support different services</p>
+												</div><!-- .text -->
+											</div><!-- .fc-iconbox-content -->
+										</div><!-- .fc-iconbox -->
+									</div><!-- .col-sm-6 -->
+								</div><!-- .row -->
 
-													<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
+								<div class="row">
+									<div class="col-sm-6" data-animate="rotateInUpLeft">
+										<div class="fc-iconbox fc-style-4 fc-hover">
+											<div class="fc-iconbox-heading">
+												<div class="icon"><img src="uploads/images/icons/icon.png" alt="Icon"></div>
+												<div class="title"> <h5>Link Layer</h5></div>
+											</div><!-- .fc-iconbox-heading -->
+											<div class="fc-iconbox-content">
+												<div class="text">
+													<p>The link layer is used to move packets from one network location to another.
+													The packets that are transferred are called frames. Each frame can be visualised
+													as hexadecimal or bits, the example of a frame here is hexadecimal. Each paragraph
+													can be interpreted as one line from each of the layers starting with the internetwork,
+													followed by the transport layer and finishing with the utility. The syntax for
+													the hardware is also a part of the frame which is the first part.</p>
+												</div><!-- .text -->
+											</div><!-- .fc-iconbox-content -->
+										</div><!-- .fc-iconbox -->
+									</div><!-- .col-sm-6 -->
+
+									<div class="col-sm-6" data-animate="rotateInUpLeft">
+										<div class="fc-iconbox fc-style-4 fc-hover">
+											<div class="fc-iconbox-heading">
+												<div class="icon"><img src="uploads/images/icons/icon.png" alt="Icon"></div>
+												<div class="title"> <h5>Link Layer</h5></div>
+											</div><!-- .fc-iconbox-heading -->
+											<div class="fc-iconbox-content">
+												<div class="text">
+													<p><a href="#" bubbletooltip="Physical: Ethernet II">
+													50 6a 03 43 69 1b c4 2c 03 24 55 c4 08 00</a>
+													<a href="#" bubbletooltip="IP">
+													45 00 02 45 b1 56 40 00 40 06 00 00 c0 a8 00 07 98 4e 76 33</a>
+													<a href="#" bubbletooltip="TCP">
+													f8 2b 00 50 a5 c4 1d 4e a8 52 86 38 80 18 ff
+													ff d1 68 00 00 01 01 08 0a 4b 1b ab 3b cb 41 7b 67</a>
+													<a href="#" bubbletooltip="SMTP">
+													48 45 4c 4f 20 6d 79 64 6f 6d 61 69 6e 2e 63 6f 6d
+													0a</a></p>
 												</div>
 											</div><!-- .fc-iconbox-content -->
 										</div><!-- .fc-iconbox -->
@@ -704,520 +1094,160 @@
 								</div><!-- .row -->
 
 								<div class="row">
-									<div class="col-sm-6" data-animate="rotateInUpLeft">
+									<div class="col-sm-12" data-animate="rotateInUpLeft">
 										<div class="fc-iconbox fc-style-4 fc-hover">
 											<div class="fc-iconbox-heading">
 
-												<div class="icon"><img src="uploads/images/icons/icon.png" alt="Icon"></div>
-												<div class="title"> <h5>Layer Name</h5></div>
+												<div class="icon"><img src="uploads/images/icons/ethernet.png" alt="Icon"></div>
+												<div class="title"> <h5>Physical Layer</h5></div>
 											</div><!-- .fc-iconbox-heading -->
 											<div class="fc-iconbox-content">
 												<div class="text">
-													<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
-
-													<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
-
-													<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
+													<p>The physical layer is made up of the hardware that links computers together.
+													In your house you probably have cables that come into the house from the street.
+													These will then be connected to a router that will send out a wireless connection
+													or a wired connection such as ethernet. The wired connections communicate
+													through their ports with the rest of the computer. The ports, ethernet cables and
+													fibre optic cables are all part of the physical layer.</p>
+													<p>The computers then send electronic messages down the wires
+													 (or using radiowaves) to transmit and receive</p>
 												</div>
 											</div><!-- .fc-iconbox-content -->
 										</div><!-- .fc-iconbox -->
-									</div><!-- .col-sm-4 -->
-									<div class="col-sm-6" data-animate="rotateInUpLeft">
-										<div class="fc-iconbox fc-style-4 fc-hover">
-											<div class="fc-iconbox-heading">
-
-												<div class="icon"><img src="uploads/images/icons/icon.png" alt="Icon"></div>
-												<div class="title"> <h5>Layer Name</h5></div>
-											</div><!-- .fc-iconbox-heading -->
-											<div class="fc-iconbox-content">
-												<div class="text">
-													<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
-
-													<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
-
-													<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
-												</div>
-											</div><!-- .fc-iconbox-content -->
-										</div><!-- .fc-iconbox -->
-									</div><!-- .col-sm-4 -->
+									</div><!-- .col-sm-12 -->
 								</div><!-- .row -->
+						<!-- END SECTION SMTP -->
+			<!-- END SECTION DOD -->
+
+
+			<!-- SECTION REFERENCES -->
+			<section class="fc-section bg-white" id="references">
+				<div class="row">
+					<div class="col-sm-8">
+						<div class="text">
+							<div class="title title-border-small">
+								<h4>References</h4>
+							</div>
+							<div class="text">
+								<ul class="bolt">
+								http://www.tutorialspoint.com/data_communication_computer_network/application_layer_introduction.htm
+								http://www.freesoft.org/CIE/Course/Section4/8.htm
+								Protocol numbers found at: http://www.iana.org/assignments/protocol-numbers/protocol-numbers.xhtml
+									<li>References</li>
+									<li>References</li>
+									<li>References</li>
+									<li>References</li>
+									<li>References</li>
+									<li>References</li>
+								</ul>
+							</div>
+						</div>
+
+					</div><!-- .col-sm-8 -->
+				</div><!-- .row -->
+			</section>
+			<!-- END SECTION REFERENCES -->
+
+			<!-- SECTION ABOUT -->
+			<section class="fc-section bg-azure bg-color-invert" id="about">
+				<!-- .title-section-->
+				<div class="title title-section">
+					<div class="separator"><i class="fa fa-group"></i></div>
+					<h2>Team <span class="color-black">members</span> &amp; <span class="color-black">skills</span></h2>
+				</div>
+				<!-- .title-section-->
+				<div class="fc-section-full-width fc-no-margins">
+					<div class="row">
+						<div class="col-md-6" data-animate="flipInX">
+
+							<div class="fc-member" style="background-image:url(uploads/images/members/sawan.jpg)">
+								<div class="fc-member-image" style="background-image:url(uploads/images/members/sawan.jpg)"></div>
+								<div class="fc-member-info bg-white bg-color-reset">
+									<div class="title title-main">
+										<h4>Sawan J. Kapai Harpalani</h4>
+										<p>Group Member</p>
+									</div>
+									<div class="text">
+										<p>Computer scientist with high passion in programming. Expert in JAVA, C++ and high knowledge in  HTML5, CSS, JavaScript.</p>
+									</div>
+									<ul class="fc-member-share">
+										<li><a href="https://github.com/alu0100694765" target="_blank" class="share-twitter btn-black"><i class="fa fa-github"></i></a></li>
+										<li><a href="https://www.facebook.com/sawan.kapai" target="_blank" class="share-facebook btn-blue"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="mailto:sjkh1g15@soton.ac.uk" class="share-google btn-orange"><i class="fa fa-envelope"></i></a></li>
+									</ul><!-- .fc-member-share -->
+								</div><!-- .fc-member-info -->
+							</div><!-- .fc-member -->
+						</div><!-- .col-md-6 -->
+						<div class="col-md-6" data-animate="flipInX">
+							<div class="fc-member" style="background-image:url(uploads/images/members/olivia.png)">
+								<div class="fc-member-image" style="background-image:url(uploads/images/members/olivia.png)"></div>
+								<div class="fc-member-info bg-white bg-color-reset">
+									<div class="title title-main">
+										<h4>Olivia Wilson</h4>
+										<p>Group Member</p>
+									</div>
+									<div class="text">
+										<p>Computer scientist with a passion for Machine Learning. Expert in Python, proficient in R, Javascript, HTML and CSS</p>
+									</div>
+									<ul class="fc-member-share">
+										<li><a href="https://github.com/oew1v07" target="_blank" class="share-twitter btn-black"><i class="fa fa-github"></i></a></li>
+										<li><a href="https://www.facebook.com/olivia.wilson.14203" target="_blank" class="share-facebook btn-blue"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="mailto:oew1v07@soton.ac.uk" class="share-google btn-orange"><i class="fa fa-envelope"></i></a></li>
+									</ul><!-- .fc-member-share -->
+								</div><!-- .fc-member-info -->
+							</div><!-- .fc-member -->
+						</div><!-- .col-md-6 -->
+					</div><!-- .row -->
+				</div><!-- .fc-section-full-width -->
+			</section>
+			<!-- END SECTION ABOUT -->
+		</div><!-- .container -->
+	</div><!-- #main -->
+
+	<footer id="footer" class="bg-black bg-color-invert" role="contentinfo">
+		<div class="container">
+			<p class="text-center">2016 SO.</p>
+		</div><!-- .container -->
+	</footer><!-- #footer -->
+
+	<!-- jQuery library -->
+	<script type="text/javascript" src="js/library/jquery/jquery-1.11.0.min.js"></script>
+
+	<!-- Bootstrap -->
+	<script type="text/javascript" src="js/library/bootstrap/bootstrap.min.js"></script>
+
+	<!-- knob -->
+	<script type="text/javascript" src="js/library/knob/jquery.knob.min.js"></script>
 
-								<div class="row">
-									<div class="col-sm-6" data-animate="rotateInUpLeft">
-										<div class="fc-iconbox fc-style-4 fc-hover">
-											<div class="fc-iconbox-heading">
-
-												<div class="icon"><img src="uploads/images/icons/icon.png" alt="Icon"></div>
-												<div class="title"> <h5>Layer Name</h5></div>
-											</div><!-- .fc-iconbox-heading -->
-											<div class="fc-iconbox-content">
-												<div class="text">
-													<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
-
-													<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
-
-													<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
-												</div>
-											</div><!-- .fc-iconbox-content -->
-										</div><!-- .fc-iconbox -->
-									</div><!-- .col-sm-4 -->
-									<div class="col-sm-6" data-animate="rotateInUpLeft">
-										<div class="fc-iconbox fc-style-4 fc-hover">
-											<div class="fc-iconbox-heading">
-
-												<div class="icon"><img src="uploads/images/icons/icon.png" alt="Icon"></div>
-												<div class="title"> <h5>Layer Name</h5></div>
-											</div><!-- .fc-iconbox-heading -->
-											<div class="fc-iconbox-content">
-												<div class="text">
-													<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
-
-													<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
-
-													<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
-												</div>
-											</div><!-- .fc-iconbox-content -->
-										</div><!-- .fc-iconbox -->
-									</div><!-- .col-sm-4 -->
-								</div><!-- .row -->
-
-
-
-
-																																		<section class="fc-section" id="smtp">
-																																			<div class="title title-section">
-																																				<h2>SMTP</h2>
-																																				<div class="separator"><i class="fa fa-envelope"></i></div>
-																																			</div><!-- .title-section -->
-
-																																			<div class="row">
-																																				<div class="col-sm-12" data-animate="rotateInUpLeft">
-																																					<div class="fc-iconbox fc-style-4 fc-hover">
-																																						<div class="fc-iconbox-heading">
-
-																																							<div class="icon"><img src="uploads/images/icons/icon.png" alt="Icon"></div>
-																																							<div class="title"> <h5>Layer Name</h5></div>
-																																						</div><!-- .fc-iconbox-heading -->
-																																						<div class="fc-iconbox-content">
-																																							<div class="text">
-																																								<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
-
-																																								<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
-
-																																								<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
-																																							</div>
-																																						</div><!-- .fc-iconbox-content -->
-																																					</div><!-- .fc-iconbox -->
-																																				</div><!-- .col-sm-4 -->
-																																			</div><!-- .row -->
-
-																																			<div class="row">
-																																				<div class="col-sm-12" data-animate="rotateInUpLeft">
-																																					<div class="fc-iconbox fc-style-4 fc-hover">
-																																						<div class="fc-iconbox-heading">
-
-																																							<div class="icon"><img src="uploads/images/icons/icon.png" alt="Icon"></div>
-																																							<div class="title"> <h5>Layer Name</h5></div>
-																																						</div><!-- .fc-iconbox-heading -->
-																																						<div class="fc-iconbox-content">
-																																							<div class="text">
-																																								<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
-
-																																								<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
-
-																																								<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
-																																							</div>
-																																						</div><!-- .fc-iconbox-content -->
-																																					</div><!-- .fc-iconbox -->
-																																				</div><!-- .col-sm-4 -->
-																																			</div><!-- .row -->
-
-																																			<div class="row">
-																																				<div class="col-sm-12" data-animate="rotateInUpLeft">
-																																					<div class="fc-iconbox fc-style-4 fc-hover">
-																																						<div class="fc-iconbox-heading">
-
-																																							<div class="icon"><img src="uploads/images/icons/icon.png" alt="Icon"></div>
-																																							<div class="title"> <h5>Layer Name</h5></div>
-																																						</div><!-- .fc-iconbox-heading -->
-																																						<div class="fc-iconbox-content">
-																																							<div class="text">
-																																								<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
-
-																																								<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
-
-																																								<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
-																																							</div>
-																																						</div><!-- .fc-iconbox-content -->
-																																					</div><!-- .fc-iconbox -->
-																																				</div><!-- .col-sm-4 -->
-																																			</div><!-- .row -->
-
-																																			<div class="row">
-																																				<div class="col-sm-12" data-animate="rotateInUpLeft">
-																																					<div class="fc-iconbox fc-style-4 fc-hover">
-																																						<div class="fc-iconbox-heading">
-
-																																							<div class="icon"><img src="uploads/images/icons/icon.png" alt="Icon"></div>
-																																							<div class="title"> <h5>Layer Name</h5></div>
-																																						</div><!-- .fc-iconbox-heading -->
-																																						<div class="fc-iconbox-content">
-																																							<div class="text">
-																																								<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
-
-																																								<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
-
-																																								<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
-																																							</div>
-																																						</div><!-- .fc-iconbox-content -->
-																																					</div><!-- .fc-iconbox -->
-																																				</div><!-- .col-sm-4 -->
-																																			</div><!-- .row -->
-
-																																			<div class="row">
-																																				<div class="col-sm-12" data-animate="rotateInUpLeft">
-																																					<div class="fc-iconbox fc-style-4 fc-hover">
-																																						<div class="fc-iconbox-heading">
-
-																																							<div class="icon"><img src="uploads/images/icons/icon.png" alt="Icon"></div>
-																																							<div class="title"> <h5>Layer Name</h5></div>
-																																						</div><!-- .fc-iconbox-heading -->
-																																						<div class="fc-iconbox-content">
-																																							<div class="text">
-																																								<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
-
-																																								<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
-
-																																								<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
-																																							</div>
-																																						</div><!-- .fc-iconbox-content -->
-																																					</div><!-- .fc-iconbox -->
-																																				</div><!-- .col-sm-4 -->
-																																			</div><!-- .row -->
-
-																																			<div class="row">
-																																				<div class="col-sm-12" data-animate="rotateInUpLeft">
-																																					<div class="fc-iconbox fc-style-4 fc-hover">
-																																						<div class="fc-iconbox-heading">
-
-																																							<div class="icon"><img src="uploads/images/icons/icon.png" alt="Icon"></div>
-																																							<div class="title"> <h5>Layer Name</h5></div>
-																																						</div><!-- .fc-iconbox-heading -->
-																																						<div class="fc-iconbox-content">
-																																							<div class="text">
-																																								<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
-
-																																								<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
-
-																																								<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
-																																							</div>
-																																						</div><!-- .fc-iconbox-content -->
-																																					</div><!-- .fc-iconbox -->
-																																				</div><!-- .col-sm-4 -->
-																																			</div><!-- .row -->
-
-																																			<div class="row">
-																																				<div class="col-sm-12" data-animate="rotateInUpLeft">
-																																					<div class="fc-iconbox fc-style-4 fc-hover">
-																																						<div class="fc-iconbox-heading">
-
-																																							<div class="icon"><img src="uploads/images/icons/icon.png" alt="Icon"></div>
-																																							<div class="title"> <h5>Layer Name</h5></div>
-																																						</div><!-- .fc-iconbox-heading -->
-																																						<div class="fc-iconbox-content">
-																																							<div class="text">
-																																								<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
-
-																																								<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
-
-																																								<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
-																																							</div>
-																																						</div><!-- .fc-iconbox-content -->
-																																					</div><!-- .fc-iconbox -->
-																																				</div><!-- .col-sm-4 -->
-																																			</div><!-- .row -->
-																																		</section>
-
-																																		<section class="fc-section" id="ftp">
-																																			<div class="title title-section">
-																																				<h2>FTP</h2>
-																																				<div class="separator"><i class="icomoon-copy"></i></div>
-																																			</div><!-- .title-section -->
-
-																																			<div class="row">
-																																				<div class="col-sm-12" data-animate="rotateInUpLeft">
-																																					<div class="fc-iconbox fc-style-4 fc-hover">
-																																						<div class="fc-iconbox-heading">
-
-																																							<div class="icon"><img src="uploads/images/icons/icon.png" alt="Icon"></div>
-																																							<div class="title"> <h5>Layer Name</h5></div>
-																																						</div><!-- .fc-iconbox-heading -->
-																																						<div class="fc-iconbox-content">
-																																							<div class="text">
-																																								<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
-
-																																								<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
-
-																																								<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
-																																							</div>
-																																						</div><!-- .fc-iconbox-content -->
-																																					</div><!-- .fc-iconbox -->
-																																				</div><!-- .col-sm-4 -->
-																																			</div><!-- .row -->
-
-																																			<div class="row">
-																																				<div class="col-sm-12" data-animate="rotateInUpLeft">
-																																					<div class="fc-iconbox fc-style-4 fc-hover">
-																																						<div class="fc-iconbox-heading">
-
-																																							<div class="icon"><img src="uploads/images/icons/icon.png" alt="Icon"></div>
-																																							<div class="title"> <h5>Layer Name</h5></div>
-																																						</div><!-- .fc-iconbox-heading -->
-																																						<div class="fc-iconbox-content">
-																																							<div class="text">
-																																								<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
-
-																																								<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
-
-																																								<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
-																																							</div>
-																																						</div><!-- .fc-iconbox-content -->
-																																					</div><!-- .fc-iconbox -->
-																																				</div><!-- .col-sm-4 -->
-																																			</div><!-- .row -->
-
-																																			<div class="row">
-																																				<div class="col-sm-12" data-animate="rotateInUpLeft">
-																																					<div class="fc-iconbox fc-style-4 fc-hover">
-																																						<div class="fc-iconbox-heading">
-
-																																							<div class="icon"><img src="uploads/images/icons/icon.png" alt="Icon"></div>
-																																							<div class="title"> <h5>Layer Name</h5></div>
-																																						</div><!-- .fc-iconbox-heading -->
-																																						<div class="fc-iconbox-content">
-																																							<div class="text">
-																																								<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
-
-																																								<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
-
-																																								<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
-																																							</div>
-																																						</div><!-- .fc-iconbox-content -->
-																																					</div><!-- .fc-iconbox -->
-																																				</div><!-- .col-sm-4 -->
-																																			</div><!-- .row -->
-
-																																			<div class="row">
-																																				<div class="col-sm-12" data-animate="rotateInUpLeft">
-																																					<div class="fc-iconbox fc-style-4 fc-hover">
-																																						<div class="fc-iconbox-heading">
-
-																																							<div class="icon"><img src="uploads/images/icons/icon.png" alt="Icon"></div>
-																																							<div class="title"> <h5>Layer Name</h5></div>
-																																						</div><!-- .fc-iconbox-heading -->
-																																						<div class="fc-iconbox-content">
-																																							<div class="text">
-																																								<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
-
-																																								<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
-
-																																								<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
-																																							</div>
-																																						</div><!-- .fc-iconbox-content -->
-																																					</div><!-- .fc-iconbox -->
-																																				</div><!-- .col-sm-4 -->
-																																			</div><!-- .row -->
-
-																																			<div class="row">
-																																				<div class="col-sm-12" data-animate="rotateInUpLeft">
-																																					<div class="fc-iconbox fc-style-4 fc-hover">
-																																						<div class="fc-iconbox-heading">
-
-																																							<div class="icon"><img src="uploads/images/icons/icon.png" alt="Icon"></div>
-																																							<div class="title"> <h5>Layer Name</h5></div>
-																																						</div><!-- .fc-iconbox-heading -->
-																																						<div class="fc-iconbox-content">
-																																							<div class="text">
-																																								<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
-
-																																								<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
-
-																																								<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
-																																							</div>
-																																						</div><!-- .fc-iconbox-content -->
-																																					</div><!-- .fc-iconbox -->
-																																				</div><!-- .col-sm-4 -->
-																																			</div><!-- .row -->
-
-																																			<div class="row">
-																																				<div class="col-sm-12" data-animate="rotateInUpLeft">
-																																					<div class="fc-iconbox fc-style-4 fc-hover">
-																																						<div class="fc-iconbox-heading">
-
-																																							<div class="icon"><img src="uploads/images/icons/icon.png" alt="Icon"></div>
-																																							<div class="title"> <h5>Layer Name</h5></div>
-																																						</div><!-- .fc-iconbox-heading -->
-																																						<div class="fc-iconbox-content">
-																																							<div class="text">
-																																								<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
-
-																																								<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
-
-																																								<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
-																																							</div>
-																																						</div><!-- .fc-iconbox-content -->
-																																					</div><!-- .fc-iconbox -->
-																																				</div><!-- .col-sm-4 -->
-																																			</div><!-- .row -->
-
-																																			<div class="row">
-																																				<div class="col-sm-12" data-animate="rotateInUpLeft">
-																																					<div class="fc-iconbox fc-style-4 fc-hover">
-																																						<div class="fc-iconbox-heading">
-
-																																							<div class="icon"><img src="uploads/images/icons/icon.png" alt="Icon"></div>
-																																							<div class="title"> <h5>Layer Name</h5></div>
-																																						</div><!-- .fc-iconbox-heading -->
-																																						<div class="fc-iconbox-content">
-																																							<div class="text">
-																																								<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
-
-																																								<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
-
-																																								<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
-																																							</div>
-																																						</div><!-- .fc-iconbox-content -->
-																																					</div><!-- .fc-iconbox -->
-																																				</div><!-- .col-sm-4 -->
-																																			</div><!-- .row -->
-																																		</section>
-
-
-																																		<!-- SECTION REFERENCES -->
-																																		<section class="fc-section bg-white" id="references">
-																																			<div class="row">
-																																				<div class="col-sm-8">
-																																					<div class="text">
-																																						<div class="title title-border-small">
-																																							<h4>References</h4>
-																																						</div>
-																																						<div class="text">
-																																							<ul class="bolt">
-																																								<li>References</li>
-																																								<li>References</li>
-																																								<li>References</li>
-																																								<li>References</li>
-																																								<li>References</li>
-																																								<li>References</li>
-																																							</ul>
-																																						</div>
-																																					</div>
-
-																																				</div><!-- .col-sm-8 -->
-																																			</div><!-- .row -->
-																																		</section>
-																																		<!-- END SECTION REFERENCES -->
-
-																																		<!-- SECTION ABOUT -->
-																																		<section class="fc-section bg-azure bg-color-invert" id="about">
-																																			<!-- .title-section-->
-																																			<div class="title title-section">
-																																				<div class="separator"><i class="fa fa-group"></i></div>
-																																				<h2>Team <span class="color-black">members</span> &amp; <span class="color-black">skills</span></h2>
-																																			</div>
-																																			<!-- .title-section-->
-																																			<div class="fc-section-full-width fc-no-margins">
-																																				<div class="row">
-																																					<div class="col-md-6" data-animate="flipInX">
-
-																																						<div class="fc-member" style="background-image:url(uploads/images/members/sawan.jpg)">
-																																							<div class="fc-member-image" style="background-image:url(uploads/images/members/sawan.jpg)"></div>
-																																							<div class="fc-member-info bg-white bg-color-reset">
-																																								<div class="title title-main">
-																																									<h4>Sawan J. Kapai Harpalani</h4>
-																																									<p>Group Member</p>
-																																								</div>
-																																								<div class="text">
-																																									<p>Computer scientist with high passion in programming. Expert in JAVA, C++ and high knowledge in  HTML5, CSS, JavaScript.</p>
-																																								</div>
-																																								<ul class="fc-member-share">
-																																									<li><a href="https://github.com/alu0100694765" target="_blank" class="share-twitter btn-black"><i class="fa fa-github"></i></a></li>
-																																									<li><a href="https://www.facebook.com/sawan.kapai" target="_blank" class="share-facebook btn-blue"><i class="fa fa-facebook"></i></a></li>
-																																									<li><a href="mailto:sjkh1g15@soton.ac.uk" class="share-google btn-orange"><i class="fa fa-envelope"></i></a></li>
-																																								</ul><!-- .fc-member-share -->
-																																							</div><!-- .fc-member-info -->
-																																						</div><!-- .fc-member -->
-																																					</div><!-- .col-md-6 -->
-																																					<div class="col-md-6" data-animate="flipInX">
-																																						<div class="fc-member" style="background-image:url(uploads/images/members/olivia.png)">
-																																							<div class="fc-member-image" style="background-image:url(uploads/images/members/olivia.png)"></div>
-																																							<div class="fc-member-info bg-white bg-color-reset">
-																																								<div class="title title-main">
-																																									<h4>Olivia Wilson</h4>
-																																									<p>Group Member</p>
-																																								</div>
-																																								<div class="text">
-																																									<p>Computer scientist with a passion for Machine Learning. Expert in Python, proficient in R, Javascript, HTML and CSS</p>
-																																								</div>
-																																								<ul class="fc-member-share">
-																																									<li><a href="https://github.com/oew1v07" target="_blank" class="share-twitter btn-black"><i class="fa fa-github"></i></a></li>
-																																									<li><a href="https://www.facebook.com/olivia.wilson.14203" target="_blank" class="share-facebook btn-blue"><i class="fa fa-facebook"></i></a></li>
-																																									<li><a href="mailto:oew1v07@soton.ac.uk" class="share-google btn-orange"><i class="fa fa-envelope"></i></a></li>
-																																								</ul><!-- .fc-member-share -->
-																																							</div><!-- .fc-member-info -->
-																																						</div><!-- .fc-member -->
-																																					</div><!-- .col-md-6 -->
-																																				</div><!-- .row -->
-																																			</div><!-- .fc-section-full-width -->
-																																		</section>
-																																		<!-- END SECTION ABOUT -->
-																																	</div><!-- .container -->
-																																</div><!-- #main -->
-
-																																<footer id="footer" class="bg-black bg-color-invert" role="contentinfo">
-																																	<div class="container">
-																																		<p class="text-center">©2016 TALISMAN. All rights reserved.</p>
-																																	</div><!-- .container -->
-																																</footer><!-- #footer -->
-
-																																<!-- jQuery library -->
-																																<script type="text/javascript" src="js/library/jquery/jquery-1.11.0.min.js"></script>
-
-																																<!-- Bootstrap -->
-																																<script type="text/javascript" src="js/library/bootstrap/bootstrap.min.js"></script>
-
-																																<!-- knob -->
-																																<script type="text/javascript" src="js/library/knob/jquery.knob.min.js"></script>
-
-																																<!-- Fancybox -->
-																																<script type="text/javascript" src="js/library/fancybox/jquery.fancybox.pack.js"></script>
-
-																																<!-- Retina js -->
-																																<script type="text/javascript" src="js/library/retina/retina.min.js"></script>
-
-																																<!-- Validate -->
-																																<script type="text/javascript" src="js/library/validate/jquery.validate.min.js"></script>
-
-																																<!-- Mediaelementjs -->
-																																<script type="text/javascript" src="js/library/mediaelementjs/mediaelement-and-player.min.js"></script>
-
-																																<!-- carouFredSel -->
-																																<script type="text/javascript" src="js/library/carouFredSel/jquery.carouFredSel-6.2.1-packed.js"></script>
-																																<script type="text/javascript" src="js/library/carouFredSel/jquery.touchSwipe.min.js"></script>
-
-																																<!-- Map -->
-																																<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
-																																<script type="text/javascript" src="js/map.min.js"></script>
-
-																																<!-- Revolution slider -->
-																																<script type="text/javascript" src="js/library/slider-revolution/js/jquery.themepunch.plugins.min.js"></script>
-																																<script type="text/javascript" src="js/library/slider-revolution/js/jquery.themepunch.revolution.min.js"></script>
-																																<script type="text/javascript" src="js/slider.min.js"></script>
-
-																																<!-- Isotope  -->
-																																<script type="text/javascript" src="js/library/isotope/isotope.pkgd.min.js"></script>
-
-																																<!-- Main theme javaScript file -->
-																																<script type="text/javascript" src="js/theme.min.js"></script>
-																															</body>
-																															</html>
+	<!-- Fancybox -->
+	<script type="text/javascript" src="js/library/fancybox/jquery.fancybox.pack.js"></script>
+
+	<!-- Retina js -->
+	<script type="text/javascript" src="js/library/retina/retina.min.js"></script>
+
+	<!-- Validate -->
+	<script type="text/javascript" src="js/library/validate/jquery.validate.min.js"></script>
+
+	<!-- Mediaelementjs -->
+	<script type="text/javascript" src="js/library/mediaelementjs/mediaelement-and-player.min.js"></script>
+
+	<!-- carouFredSel -->
+	<script type="text/javascript" src="js/library/carouFredSel/jquery.carouFredSel-6.2.1-packed.js"></script>
+	<script type="text/javascript" src="js/library/carouFredSel/jquery.touchSwipe.min.js"></script>
+
+	<!-- Map -->
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+	<script type="text/javascript" src="js/map.min.js"></script>
+
+	<!-- Revolution slider -->
+	<script type="text/javascript" src="js/library/slider-revolution/js/jquery.themepunch.plugins.min.js"></script>
+	<script type="text/javascript" src="js/library/slider-revolution/js/jquery.themepunch.revolution.min.js"></script>
+	<script type="text/javascript" src="js/slider.min.js"></script>
+
+	<!-- Isotope  -->
+	<script type="text/javascript" src="js/library/isotope/isotope.pkgd.min.js"></script>
+
+	<!-- Main theme javaScript file -->
+	<script type="text/javascript" src="js/theme.min.js"></script>
+</body>
+</html>
