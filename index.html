@@ -41,6 +41,53 @@
 	<!-- Modernizr -->
 	<script type="text/javascript" src="js/library/Modernizr/modernizr.min.js"></script>
 
+	<style type="text/css">
+
+	        a[bubbletooltip]:link, a[bubbletooltip]:visited
+	        {
+	                text-decoration: none;
+	                position: relative;
+	                color : black;
+	        }
+
+	        a[bubbletooltip]:before
+	        {
+	                content: "";
+	                position: absolute;
+	                border-right: 21px solid #292f45;
+	                border-top: 21px solid;
+	                border-bottom: 21px solid;
+	                visibility: hidden;
+	                bottom: -12px;
+	                right: -20px;
+	        }
+
+	        a[bubbletooltip]:after
+	        {
+	                position: absolute;
+	                content: attr(bubbletooltip);
+	                font-weight:bold;
+	                right: -148px;
+	                bottom: -16px;
+	                width:120px;
+	                background: #292f45;
+	                color: #FFFFFF;
+	                padding: 5px 10px;
+	                -moz-border-radius: 6px;
+	                -webkit-border-radius:6px;
+	                -khtml-border-radius:6px;
+	                border-radius: 6px;
+	                visibility: hidden;
+	        }
+
+	        a[bubbletooltip]:hover:before, a[bubbletooltip]:hover:after
+	        {
+	                visibility: visible;
+	                -moz-transition: visibility 0s linear .3s;
+	        }
+
+	    </style>
+
 </head>
 
 <body class="index" data-spy="scroll" data-target=".navbar">
@@ -266,7 +313,7 @@
 				<div class="title title-section">
 					<h2>DoD Model</h2>
 					<div class="separator">&middot;</div>
-					<p>Proin ultrices tellus congue imperdiet dapibus tincidunt etiam tincidunt ad vel praesent inceptos elit, eget nisi malesuada ad odio nibh facilisis aliquam eget duis donec vel. Potenti volutpat mauris, pellentesque</p>
+					<p>The DOD model was first advocated by Vinton Cerf and Edward Cain in their 1983 paper <i>The DoD Internet Architecture Model</i>.</p>
 				</div><!-- .title-section -->
 
 				<div>
@@ -287,7 +334,8 @@
 									<div class="fc-iconbox-content">
 
 										<div class="text">
-											<p>Ultricies cubilia velit non malesuada ultrices lacus nullam in, dapibus purus eu quis mauris enim leo sapien morbi, vivamus feugiat suscipit in id ad auctor</p>
+											<p>It is a framework to understand how each protocol relies on a series of other
+											    protocols. For example, wifi protocols will form the basis for anything on top of them</p>
 										</div>
 									</div><!-- .fc-iconbox-content -->
 								</div><!-- .fc-iconbox -->
@@ -301,7 +349,8 @@
 									<div class="fc-iconbox-content">
 
 										<div class="text">
-											<p>Aptent ligula quam mollis eget aliquet posuere quam hendrerit mi posuere justo, augue condimentum fusce dui id sapien consectetur donec ut feugiat. Eros molestie faucibus tortor interdum egestas vitae leo, ultrices nibh ac convallis accumsan</p>
+											<p>Built on the heterogeneity of the lower level systems, focussing on
+											   the widely varying specifications of things connecting to a network</p>
 										</div>
 									</div><!-- .fc-iconbox-content -->
 								</div><!-- .fc-iconbox -->
@@ -315,7 +364,7 @@
 									<div class="fc-iconbox-content">
 
 										<div class="text">
-											<p>Urna aptent enim aptent nibh nam interdum porta mattis, volutpat magna sodales dolor adipiscing non. Venenatis nunc venenatis condimentum, donec</p>
+											<p>TODO: Something here</p>
 										</div>
 									</div><!-- .fc-iconbox-content -->
 								</div><!-- .fc-iconbox -->
@@ -333,7 +382,230 @@
 					</div><!-- .title-section -->
 
 					<div class="row">
-						<div class="col-sm-12" data-animate="rotateInUpLeft">
+						<div class="col-sm-6" data-animate="rotateInUpLeft">
+							<div class="fc-iconbox fc-style-4 fc-hover">
+								<div class="fc-iconbox-heading">
+
+									<div class="icon"><img src="uploads/images/icons/application_http.jpg" alt="Icon"></div>
+									<div class="title"> <h5>Application Layer</h5></div>
+								</div><!-- .fc-iconbox-heading -->
+								<div class="fc-iconbox-content">
+									<div class="text">
+										<p>When looking at a website such as {example website name here}, the application
+										    layer would be the browser used to view the website. The browser would
+										    be able to interpret the HyperText Markup Language (HTML). It is the layer from which the actual
+										    communication (whatever it may be) is initiated.</p>
+									</div><!-- .text -->
+								</div><!-- .fc-iconbox-content -->
+							</div><!-- .fc-iconbox -->
+						</div><!-- .col-sm-4 -->
+						<div class="col-sm-6" data-animate="rotateInUpLeft">
+							<div class="fc-iconbox fc-style-4 fc-hover">
+								<div class="fc-iconbox-heading">
+
+									<div class="icon"><img src="uploads/images/icons/application_http.jpg" alt="Icon"></div>
+									<div class="title"> <h5>Application Layer</h5></div>
+								</div><!-- .fc-iconbox-heading -->
+								<div class="fc-iconbox-content">
+									<div class="text">
+										<p>TODO: Something</p>
+									</div>
+								</div><!-- .fc-iconbox-content -->
+							</div><!-- .fc-iconbox -->
+						</div><!-- .col-sm-4 -->
+					</div><!-- .row -->
+
+					<div class="row">
+						<div class="col-sm-6" data-animate="rotateInUpLeft">
+							<div class="fc-iconbox fc-style-4 fc-hover">
+								<div class="fc-iconbox-heading">
+
+									<div class="icon"><img src="uploads/images/icons/icon.png" alt="Icon"></div>
+									<div class="title"> <h5>Utility Layer</h5></div>
+								</div><!-- .fc-iconbox-heading -->
+								<div class="fc-iconbox-content">
+									<div class="text">
+										<p>The utility layer contains protocols for specific applications. These include:
+					                    Domain Name System (DNS), Internet Relay Chat (IRC), Secure Shell (SSH) and Voice
+					                    over IP (VOIP). This differs from the layers below because almost all of these
+					                    will then use the same transport and internet protocols.
+					                    </p>
+										<p>
+											For looking at websites the main protocol is HyperText Transfer Protocol
+											    (HTTP). Its format is shown on the right.
+										</p>
+									</div>
+								</div><!-- .fc-iconbox-content -->
+							</div><!-- .fc-iconbox -->
+						</div><!-- .col-sm-4 -->
+						<div class="col-sm-6" data-animate="rotateInUpLeft">
+							<div class="fc-iconbox fc-style-4 fc-hover">
+								<div class="fc-iconbox-heading">
+
+									<div class="icon"><img src="uploads/images/icons/icon.png" alt="Icon"></div>
+									<div class="title"> <h5>Utility Layer</h5></div>
+								</div><!-- .fc-iconbox-heading -->
+								<div class="fc-iconbox-content">
+									<div class="text">
+										<p>
+										<a href="#"
+					                             bubbletooltip="Use version 1.1. of HTML">
+					                             GET / HTTP/1.1\r\n</a><br/>
+					                	<a href="#"
+					                             bubbletooltip="Go to this website">
+					                             Host: {www.soton.ac.uk}\r\n</a><br/>
+					                	<a href="#"
+					                             bubbletooltip="Please keep this connection between computers open">
+					                             Connection: keep-alive\r\n</a><br/>
+					                	<a href="#" bubbletooltip="Accept only these types of data back">
+					                             Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;
+					                             q=0.8\r\n</a><br/>
+					                	<a href="#"
+					                             bubbletooltip="If the website only accepts secure connections, change it to a secure connection">
+					                             Upgrade-Insecure-Requests: 1\r\n</a><br/>
+					                	<a href="#" bubbletooltip="This is the kind of system I'm running">
+					                             User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36
+					                             (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36\r\n</a><br/>
+					                	<a href="#" bubbletooltip="I can accept these types of encoding">
+					                             Accept-Encoding: gzip, deflate, sdch\r\n</a><br/>
+					                	<a href="#" bubbletooltip="These are my default languages">
+					                             Accept-Language: en-US,en;q=0.8,en-GB;q=0.6\r\n</a><br/>
+					                	<a href="#" bubbletooltip="These are the cookie details this computer has been allocated">
+					                             Cookie: fos.web.server=uos-web00020-si; _ga=GA1.3.1002123292.1443177497;
+					                             runId=-2242960999957318882; usid=6nhnokZcf0e++vtdI/Ce+A__\r\n
+					                             \r\n.</a><br/>
+									    </p>
+									</div>
+								</div><!-- .fc-iconbox-content -->
+							</div><!-- .fc-iconbox -->
+						</div><!-- .col-sm-4 -->
+					</div><!-- .row -->
+
+					<div class="row">
+						<div class="col-sm-6" data-animate="rotateInUpLeft">
+							<div class="fc-iconbox fc-style-4 fc-hover">
+								<div class="fc-iconbox-heading">
+
+									<div class="icon"><img src="uploads/images/icons/icon.png" alt="Icon"></div>
+									<div class="title"> <h5>Transport Layer</h5></div>
+								</div><!-- .fc-iconbox-heading -->
+								<div class="fc-iconbox-content">
+									<div class="text">
+										<p>The transport layer contains protocols that deal with the moving of packets.
+					                    It splits the message into packets takes each of the packets and puts a "header"
+					                    with metadata to then send through the network. Below shows the process. Particularly
+					                    with TCP the headers contain data to then ensure the reliable delivery of packets.
+					                    Other protocols such as UDP are used when reliable delivery is not so key.</p>
+
+					                    <p>If this data was split into three packets then the data structure would change,
+										shown in on right</p>
+									</div>
+								</div><!-- .fc-iconbox-content -->
+							</div><!-- .fc-iconbox -->
+						</div><!-- .col-sm-4 -->
+						<div class="col-sm-6" data-animate="rotateInUpLeft">
+							<div class="fc-iconbox fc-style-4 fc-hover">
+								<div class="fc-iconbox-heading">
+
+									<div class="icon"><img src="uploads/images/icons/icon.png" alt="Icon"></div>
+									<div class="title"> <h5>Transport Layer</h5></div>
+								</div><!-- .fc-iconbox-heading -->
+								<div class="fc-iconbox-content">
+									<div class="text">
+										<TABLE BORDER=2 CELLPADDING=10>
+					                    <TR>
+					                        <TD><b>Header</b></TD><TD><b>Data</b></TD>
+					                    </TR>
+					                    <TR>
+					                        <TD><a href="#" bubbletooltip="Source Port: Port from which the TCP protocol originated">
+					                                      63531</a></TD>
+					                        <TD ROWSPAN=4><a href="#" bubbletooltip="Packet number 1 data">
+					                                      GET / HTTP/1.1\r\nHost: www.soton.ac.uk\r\nConnection: keep-alive\r\n
+					                                      Accept: text/html, application/xhtml+xml,application/xml; q=0.9,
+					                                      image/webp,*/*; q=0.8\r\nUpgrade-Insecure-Requests: </a></TD>
+					                        </TR>
+					                    <TR>
+					                        <TD><a href="#" bubbletooltip="Destination Port: Port to where the protocol is destined">
+					                            80</a></TD>
+					                        </TR>
+					                    <TR>
+					                        <TD><a href="#" bubbletooltip="Sequence Number: A random number initially but subsequent packets are
+					                            the initial number added to the length of the packet">
+					                            2781093198</a></TD>
+					                        </TR>
+					                    <TR>
+					                        <TD><a href="#" bubbletooltip="Acknowledgment Number: The acknowledgment number contains the value of
+					                            the next sequence number that is expected to be received.">
+					                            2781093376</a></TD>
+					                        </TR>
+					                    </TABLE>
+
+					                    <TABLE BORDER=2 CELLPADDING=10>
+					                    <TR>
+					                        <TD><a href="#" bubbletooltip="Source Port packet 2">
+					                                      63531</a></TD>
+					                        <TD ROWSPAN=4><a href="#" bubbletooltip="Packet number 2 data">
+					                                       1\r\nUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5)
+					                                       	   AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526. 106
+					                                           Safari/537.36\r\nAccept-Encoding: gzip, deflate, sdch\r\n  </a></TD>
+					                        </TR>
+					                    <TR>
+					                        <TD><a href="#" bubbletooltip="Destination Port packet 2">
+					                            80</a></TD>
+					                        </TR>
+					                    <TR>
+					                        <TD><a href="#" bubbletooltip="Sequence Number packet 2">2781093376</a></TD>
+					                        </TR>
+					                    <TR>
+					                        <TD><a href="#" bubbletooltip="Acknowledgment Number packet 2">2781093554</a></TD>
+					                        </TR>
+					                    </TABLE>
+
+					                    <TABLE BORDER=2 CELLPADDING=10>
+					                    <TR>
+					                        <TD><a href="#" bubbletooltip="Source Port packet 3">
+					                                      63531</a></TD>
+					                        <TD ROWSPAN=4><a href="#" bubbletooltip="Packet number 3 data">
+					                                      Accept-Language: en-US,en; q=0.8,en-GB; q=0.6\r\nCookie:
+					                                      fos.web.server= uos-web00020-si; _ga=GA1.3.1002123292. 1443177497;
+					                                      runId=-2242960999957318882; usid=6nhnokZcf0e++vtdI/ Ce+A__\r\n\r\n</a></TD>
+					                        </TR>
+					                    <TR>
+					                        <TD><a href="#" bubbletooltip="Destination Port packet 3">
+					                            80</a></TD>
+					                        </TR>
+					                    <TR>
+					                        <TD><a href="#" bubbletooltip="Sequence Number packet 3">2781093554</a></TD>
+					                        </TR>
+					                    <TR>
+					                        <TD><a href="#" bubbletooltip="Acknowledgment Number packet 3">2781093732</a></TD>
+					                        </TR>
+					                    </TABLE>
+									</div>
+								</div><!-- .fc-iconbox-content -->
+							</div><!-- .fc-iconbox -->
+						</div><!-- .col-sm-4 -->
+					</div><!-- .row -->
+
+					<div class="row">
+						<div class="col-sm-6" data-animate="rotateInUpLeft">
+							<div class="fc-iconbox fc-style-4 fc-hover">
+								<div class="fc-iconbox-heading">
+
+									<div class="icon"><img src="uploads/images/icons/icon.png" alt="Icon"></div>
+									<div class="title"> <h5>Internetwork Layer</h5></div>
+								</div><!-- .fc-iconbox-heading -->
+								<div class="fc-iconbox-content">
+									<div class="text">
+										<p>	The internetwork is protocol by which the packets made in the transport layer.
+											It also adds its own header to sends some of its own metadata. This metadata
+											contains the following aspects (which are all coded in their original numbers)
+										</p>
+									</div>
+								</div><!-- .fc-iconbox-content -->
+							</div><!-- .fc-iconbox -->
+						</div><!-- .col-sm-4 -->
+						<div class="col-sm-6" data-animate="rotateInUpLeft">
 							<div class="fc-iconbox fc-style-4 fc-hover">
 								<div class="fc-iconbox-heading">
 
@@ -354,7 +626,25 @@
 					</div><!-- .row -->
 
 					<div class="row">
-						<div class="col-sm-12" data-animate="rotateInUpLeft">
+						<div class="col-sm-6" data-animate="rotateInUpLeft">
+							<div class="fc-iconbox fc-style-4 fc-hover">
+								<div class="fc-iconbox-heading">
+
+									<div class="icon"><img src="uploads/images/icons/icon.png" alt="Icon"></div>
+									<div class="title"> <h5>Layer Name</h5></div>
+								</div><!-- .fc-iconbox-heading -->
+								<div class="fc-iconbox-content">
+									<div class="text">
+										<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
+
+										<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
+
+										<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
+									</div>
+								</div><!-- .fc-iconbox-content -->
+							</div><!-- .fc-iconbox -->
+						</div><!-- .col-sm-4 -->
+						<div class="col-sm-6" data-animate="rotateInUpLeft">
 							<div class="fc-iconbox fc-style-4 fc-hover">
 								<div class="fc-iconbox-heading">
 
@@ -375,7 +665,25 @@
 					</div><!-- .row -->
 
 					<div class="row">
-						<div class="col-sm-12" data-animate="rotateInUpLeft">
+						<div class="col-sm-6" data-animate="rotateInUpLeft">
+							<div class="fc-iconbox fc-style-4 fc-hover">
+								<div class="fc-iconbox-heading">
+
+									<div class="icon"><img src="uploads/images/icons/icon.png" alt="Icon"></div>
+									<div class="title"> <h5>Layer Name</h5></div>
+								</div><!-- .fc-iconbox-heading -->
+								<div class="fc-iconbox-content">
+									<div class="text">
+										<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
+
+										<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
+
+										<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
+									</div>
+								</div><!-- .fc-iconbox-content -->
+							</div><!-- .fc-iconbox -->
+						</div><!-- .col-sm-4 -->
+						<div class="col-sm-6" data-animate="rotateInUpLeft">
 							<div class="fc-iconbox fc-style-4 fc-hover">
 								<div class="fc-iconbox-heading">
 
@@ -396,7 +704,25 @@
 					</div><!-- .row -->
 
 					<div class="row">
-						<div class="col-sm-12" data-animate="rotateInUpLeft">
+						<div class="col-sm-6" data-animate="rotateInUpLeft">
+							<div class="fc-iconbox fc-style-4 fc-hover">
+								<div class="fc-iconbox-heading">
+
+									<div class="icon"><img src="uploads/images/icons/icon.png" alt="Icon"></div>
+									<div class="title"> <h5>Layer Name</h5></div>
+								</div><!-- .fc-iconbox-heading -->
+								<div class="fc-iconbox-content">
+									<div class="text">
+										<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
+
+										<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
+
+										<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
+									</div>
+								</div><!-- .fc-iconbox-content -->
+							</div><!-- .fc-iconbox -->
+						</div><!-- .col-sm-4 -->
+						<div class="col-sm-6" data-animate="rotateInUpLeft">
 							<div class="fc-iconbox fc-style-4 fc-hover">
 								<div class="fc-iconbox-heading">
 
@@ -415,70 +741,6 @@
 							</div><!-- .fc-iconbox -->
 						</div><!-- .col-sm-4 -->
 					</div><!-- .row -->
-
-					<div class="row">
-						<div class="col-sm-12" data-animate="rotateInUpLeft">
-							<div class="fc-iconbox fc-style-4 fc-hover">
-								<div class="fc-iconbox-heading">
-
-									<div class="icon"><img src="uploads/images/icons/icon.png" alt="Icon"></div>
-									<div class="title"> <h5>Layer Name</h5></div>
-								</div><!-- .fc-iconbox-heading -->
-								<div class="fc-iconbox-content">
-									<div class="text">
-										<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
-
-										<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
-
-										<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
-									</div>
-								</div><!-- .fc-iconbox-content -->
-							</div><!-- .fc-iconbox -->
-						</div><!-- .col-sm-4 -->
-					</div><!-- .row -->
-
-					<div class="row">
-						<div class="col-sm-12" data-animate="rotateInUpLeft">
-							<div class="fc-iconbox fc-style-4 fc-hover">
-								<div class="fc-iconbox-heading">
-
-									<div class="icon"><img src="uploads/images/icons/icon.png" alt="Icon"></div>
-									<div class="title"> <h5>Layer Name</h5></div>
-								</div><!-- .fc-iconbox-heading -->
-								<div class="fc-iconbox-content">
-									<div class="text">
-										<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
-
-										<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
-
-										<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
-									</div>
-								</div><!-- .fc-iconbox-content -->
-							</div><!-- .fc-iconbox -->
-						</div><!-- .col-sm-4 -->
-					</div><!-- .row -->
-
-					<div class="row">
-						<div class="col-sm-12" data-animate="rotateInUpLeft">
-							<div class="fc-iconbox fc-style-4 fc-hover">
-								<div class="fc-iconbox-heading">
-
-									<div class="icon"><img src="uploads/images/icons/icon.png" alt="Icon"></div>
-									<div class="title"> <h5>Layer Name</h5></div>
-								</div><!-- .fc-iconbox-heading -->
-								<div class="fc-iconbox-content">
-									<div class="text">
-										<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
-
-										<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
-
-										<p>Everyone loves to have fast and quick way to get what he or she wants. Single page websites are the best ways to offer your visitors all the quickness possible by compiling all the content you want in a single page.</p>
-									</div>
-								</div><!-- .fc-iconbox-content -->
-							</div><!-- .fc-iconbox -->
-						</div><!-- .col-sm-4 -->
-					</div><!-- .row -->
-				</section>
 
 
 
