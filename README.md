@@ -1,6 +1,6 @@
 Dodel
 ========
-Web site designed using [HTML5 CSS3](https://gun.io/static/uploads/HTML%3ACSS3.jpg).
+Web site designed using ![HTML5 CSS3](https://gun.io/static/uploads/HTML%3ACSS3.jpg).
 * version: 1.0
 * Group project of the module "COMP6233: Topics in Computer Science", MSc in Computer Science, University of Southampton.
 
