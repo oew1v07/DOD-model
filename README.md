@@ -15,7 +15,7 @@ This project is under GNU license.
 Explain the Dod Model and illustrate its key concept(s)	and	the	impact(s) of related applications on individuals, organisaJons and society.
 
 ## Deployment
-You can find this project at [Dodel](http://oew1v07.github.io/DOD-model/)
+You can find this project at [Dodel](http://oew1v07.github.io/DOD-model/) or looking at index.html
 
 ## References
 * [The DoD Internet Architecture Model](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.88.7505&rep=rep1&type=pdf) 		

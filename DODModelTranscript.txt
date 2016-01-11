@@ -1,0 +1,34 @@
+COMP6233 Presentation Transcript
+————————————————
+
+Olivia Wilson
+22277935
+oew1v07@soton.ac.uk
+
+Sawan Kapai Harpalani
+28188551
+sjkh1g15@soton.ac.uk
+
+We chose to use the DOD Internet Architecture paper by Vinton Cerf and Edward Cain. The key concepts of this paper are that differences at the lower level protocols. Another key concept is 'layering', which builds upon the previous layers, so that the protocols used at the lower levels do not dictate what you can use at the upper levels. Finally, in this world of military organisations, requiring enhanced security, this model provides more security aspects than any other.
+
+The DoD model was first advocated by Vinton Cerf and Edward Cain in their 1983 paper. It is a framework that shows how each protocol relies on a series of other protocols, and it was built upon the fact that the lower levels will have such heterogeneous systems that there should be more of a focus on inclusivity rather than standards.
+
+So, as you can see, this internet page provides an interactive and responsive site allowing the user to look at each individual protocol layer and their functions. At the application layer - for this specific example of HTTP - the browser is the application layer and enables the interpretation of the markup language (HTML), and is also the layer from which all communication is initiated.
+
+Going down, the utility layer provides the functionality that one wants to use. There are many different utility protocols including SSH, IRC and DNS, but for looking at websites we use the Hyper-Text Transfer Protocol (HTTP). As you can see from the explanation on the right-hand side, this is the syntax used for the HTTP, with bubble tool-tips providing insight into the specific explanations of the different parts.
+
+Going on, the transport layer deals with the movement of packets. It puts a header in front of the data which aids delivery and ensures that all packets are re-ordered correctly. In this example, we show how each packet would be given a header and the meanings of each field in the header.
+
+The internetwork layer also adds its own header, but in this case it is to do with how the data is transported through the internet, from one computer to another. In the example, a traceroute from a local computer to a Google server is shown, showing how the packets are routed through different computers called nodes, to end up at Google.
+
+The network layer deals with all of the local area network communication, and is usually heavily relied upon by the military and industrial sectors. The link layer below it is made up of 'frames', which are the raw data to be sent across the physical layer. You can see from the example how each frame is made up of separate sections from each of the previous layers. They are shown as raw hexadecimal, with tooltips.
+
+Finally, the physical layer is to do with the ports, ethernet and fibre-optic cables that actually link the physical computers together.
+
+Within the next example of sending an email, many of the items are very similar. A lot of things nowadays only use a small number of protocols, and as such, a lot of it will be the same. However, we start with the application layer, which - instead of being a browser, will be an email client like Microsoft Outlook, or Mozilla Thunderbird. At the utility layer, instead of using HTTP we use the Simple Mail Transfer Protocol (SMTP). However, the main difference between SMTP and HTTP comes within this layer, in that the communication is made up of a series of communications between a client and the mail server. Each of these communications will be sent separately. The example shows the syntax of a typical mail transaction, and the bubble tooltips give an explanation of what on earth it all means.
+
+So, here we have the server talking to a client saying "Hello, I am a mail server at example.com, and you must use ESMTP to talk to me". This continues with "Hello, I am sending emails on behalf of this domain", and ends with the server closing the channel between the client and server after all of the information has been exchanged successfully. Within the transport layer, much is the same. The differences come in the default ports used, and in this example, because each individual communication is so small the packets are not 'real' examples, but are illustrative of how packets would be used. The internetwork layer is identical to the previous example in all but the total length of the message. The network layer is, again, identical, and finally the link layer frame is much shorter as messages are sent as a series of communications rather than one large communication. Finally, nothing changes in the physical layer - assuming you are sending it from the same computer using the same network connection!
+
+As you can see, this model has survived to this day. First advocated in 1983, it has become the predecessor for the modern TCP/IP model - although the ISO and CCITT models are both still used. However, there are many benefits of the DoD model that the OSI (ISO) model does not have. Specifically, it did not build upon the heterogeneity of the lower levels. Because there was such an emphasis on the applicability of this model, this meant that it found a wide usage in industry standards where less common interfaces were used. And it is this abstraction of the higher levels that made it evolve into the TCP/IP model, and I believe it is this reason that has contributed to its longevity.
+
+Finally, this website was created using HTML, CSS and Javascript and employs responsiveness, and is very interactive for people wanting to learn more about this topic. Specifically, the bubble tool-tips enable you to go into more depth, and to have a less cluttered page.
